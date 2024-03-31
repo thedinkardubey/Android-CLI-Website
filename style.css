@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha2/katex.min.css";
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply Roboto font to the entire page */
+body {
+    font-family:  Georgia, Cambria, serif;
+    background-color: #f3f3f3;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #f3f3f3;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #f3f3f3;
+    color: #286090;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Container for main content */
+.container-one {
+    min-height: 89vh; /* Decreased height */
+    padding: 20px 20vw; /* Adjust padding */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+}
+
+/* Left side of main content */
+.left-container-one {
+    width: 45%; /* Adjusted width */
+    text-align: left; /* Left align text */
+}
+
+.left-container-one span {
+    font-size: 25px;
+    font-weight: 400;
+    color: #777777;
+    display: block; /* Ensure block-level display for proper alignment */
+}
+
+.left-container-one p {
+    word-wrap: wrap;
+    margin: 10px 0; /* Adjusted margin */
+    color: #777777;
+}
+
+/* Right side of main content */
+.right-container-one {
+    width: 40%; /* Adjusted width */
+    text-align: center; /* Center align text */
+}
+
+.right-container-one img {
+    width: 80%; /* Adjusted width */
+}
+
+/* Download button */
+.downloadBtn {
+    color: white;
+    background-color: #337ab7;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-top: 20px; /* Add top margin for space */
+}
+
+.downloadBtn:hover {
+    background-color: #286090;
+}
+
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: #777777;
+    padding: 10px 0;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container-one {
+        flex-direction: column; /* Change flex direction for smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .left-container-one,
+    .right-container-one {
+        width: 100%; /* Adjusted width */
+        text-align: center; /* Center align text */
+    }
+
+    .right-container-one img {
+        margin-top: 34px; /* Add top margin for space */
+        margin-bottom: 0px;   
+        width: 100%;       
+    }
+
+    .downloadBtn {
+        margin-top: 20px; /* Add top margin for space */
+    }
+
+  
+}
